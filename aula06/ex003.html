@@ -16,12 +16,13 @@
 <body>
     <h1>Olá, Mundo!</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, laboriosam accusantium molestias ex veritatis perferendis, nesciunt tempore voluptas vitae aperiam esse atque iusto nihil voluptatem sapiente. Neque eum hic rem.</p>
-    <script>/*aqui começa a trajetória em javascript*/
-       /* window.alert('minha primeira mensagem em Js')
-        window.confirm('esta gostando de Js ?')*/
-      var nome = window.prompt('qual é seu nome ?')
-      window.alert('e um grande prazer em te conhecer, ' + nome + '!') /* o sinal de mais é uma concatenação*/
-         
+    <script>
+        var n1 = Number(window.prompt('Digite um numero:' ))
+        var n2 = Number(window.prompt('Digite outro numero:' ))
+        var s = n1 + n2
+       /*window.alert('a soma dos dois valores é: ' + s) forma antiga*/
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) /* o mais serve para concatenação e adição*/
+        /* se quiser virar o s em string basta por assim String(s)*/
     </script>
 </body>
 </html>
