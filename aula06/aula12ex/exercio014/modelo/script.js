@@ -4,16 +4,17 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas.`
-}
+
 if (hora >= 0 && hora < 12){
     //Bom dia
-    img.src = 'manha.ico'
-    document.body.style.background = 'red'
+    img.src = 'imagens/manha.ico'
+    document.body.style.background = '#e2cd9f'
 }else if(hora >= 12 && hora <=18){
     //Boa tarde
-    img.src = 'tarde.ico'
-    document.body.style.background = 'red'
-}else if(hora <= 0 && hora >18){ 
-    img.src = 'noite.ico'
-    document.body.style.background = 'red'
+    img.src = 'imagens/tarde.ico'
+    document.body.style.background = '#FF8C00'
+}else { 
+    img.src = 'imagens/noite.ico'
+    document.body.style.background = '#363636'
+}
 }
